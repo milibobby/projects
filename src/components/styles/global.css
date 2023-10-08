@@ -1,0 +1,12 @@
+/* Styles for social media icons */
+.social-media-icons {
+    font-size: 28px;
+}
+
+/* Styles for individual social media icons */
+.social-media-icons .google-icon,
+.social-media-icons .facebook-icon,
+.social-media-icons .linkedin-icon,
+.social-media-icons .twitter-icon {
+    margin-right: 30px;
+}

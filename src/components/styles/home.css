@@ -1,0 +1,275 @@
+/* Reset default margin and padding for the entire document */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Styles for the home page */
+.home-page {
+    text-align: center;
+    padding: 20px;
+    padding-top: 50px;
+    flex-grow: 1;
+}
+
+/* Fix for a specific h1 element margin */
+.home-page h1 {
+    margin-left: -680px;
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 65%;
+    background-color: white;
+    z-index: 999;
+    height: 50px;
+    transition: height 0.3s;
+}
+
+/* Styles for the left side of the navbar */
+.nav-left {
+    font-weight: bold;
+    text-align: left;
+    margin-top: -10px;
+}
+
+/* Styles for filter links on the right side of the navbar */
+.filter-links {
+    text-align: right;
+    margin-top: -10px;
+}
+
+/* Styles for individual filter links */
+.filter-links span {
+    cursor: pointer;
+    text-decoration: none;
+    color: #333;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    /* Adjusted spacing between filter links */
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    transition: text-decoration 0.2s ease-in-out, border-bottom 0.2s ease-in-out;
+}
+
+/* Active filter link styles */
+.filter-links span.active {
+    text-decoration: none;
+    border-bottom: 2px solid #333;
+    margin-bottom: 0;
+}
+
+/* Hover styles for filter links */
+.filter-links span:hover {
+    text-decoration: none;
+    border-bottom: 2px solid #333;
+    margin-bottom: 0;
+}
+
+/* Bold text styles */
+.bold-text {
+    font-weight: bold;
+}
+
+/* Styles for the main content container */
+.centered-container {
+    display: flex;
+    justify-content: center;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-bottom: 100px;
+    flex-wrap: wrap;
+}
+
+/* Styles for individual columns in the content container */
+.column {
+    flex: 1;
+    padding: 10px;
+    max-width: 400px;
+    margin-top: 80px;
+}
+
+/* Styles for individual country cards */
+.country {
+    display: flex;
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 15px;
+    min-height: 100px;
+    background-color: #f9f9f9;
+    transition: background-color 0.1s ease, transform 0.1s ease;
+}
+
+/* Hover styles for country cards */
+.country:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.05);
+}
+
+/* Styles for country flags */
+.flag {
+    flex: 1;
+}
+
+.flag img {
+    width: 100px;
+    height: 75px;
+}
+
+/* Styles for country information */
+.info {
+    flex: 2;
+    padding: 0 10px;
+    text-align: left;
+}
+
+/* Styles for h2 elements */
+.info h2 {
+    margin-top: -5px;
+    font-size: 15px;
+}
+
+h2 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+/* Styles for paragraphs */
+p {
+    font-size: 1rem;
+    margin-top: -5px;
+}
+
+/* Footer styles */
+.footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    height: 100px;
+    margin-top: 100px;
+    align-items: center;
+}
+
+/* Styles for social media links in the footer */
+.home-social-media {
+    margin-left: 100px;
+}
+
+/* Styles for footer paragraphs */
+.footer p {
+    margin-top: 20px;
+    font-size: 10px;
+    font-weight: bold;
+    color: #4d4d4d;
+}
+
+/* Styles for icons */
+.icons {
+    margin-left: 35px;
+}
+
+/* Hide the hamburger menu button by default */
+.menu-button {
+    display: none;
+}
+
+/* Media query for screen size reduction */
+
+
+
+@media (max-width: 768px) {
+
+    /* Adjust column styles for smaller screens */
+    .column {
+        max-width: 100%;
+        margin-top: 20px;
+        flex-basis: 100%;
+    }
+
+    /* Adjust navbar styles for smaller screens */
+    .navbar {
+        width: 100%;
+    }
+
+    /* Styles for the left side of the navbar on smaller screens */
+    .nav-left {
+        font-weight: bold;
+        text-align: center;
+        margin-top: 20px;
+        margin-left: 50px;
+    }
+
+    /* Styles for filter links on smaller screens */
+    .filter-links {
+        margin-top: 20px;
+        text-align: center;
+        margin-right: 50px;
+    }
+
+    /* Styles for the hamburger menu button */
+    .menu-button {
+        background: none;
+        border: none;
+        padding: 0;
+        outline: none;
+        display: block;
+        margin-right: 45px;
+        margin-top: 25px;
+    }
+
+    /* Styles for the lines in the hamburger menu button */
+    .hamburger-line {
+        width: 30px;
+        height: 2px;
+        background-color: #333;
+        margin: 4px 0;
+        transition: background-color 0.3s;
+    }
+
+    /* Hover styles for the lines in the hamburger menu button */
+    .hamburger-line:hover {
+        background-color: #555;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1023px) {
+
+    /* Adjust column styles for medium-sized screens */
+    .column {
+        flex-basis: calc(50% - 20px);
+        margin-top: 20px;
+    }
+
+    /* Adjust navbar styles for medium-sized screens */
+    .navbar {
+        width: 100%;
+    }
+
+    /* Styles for the left side of the navbar on medium-sized screens */
+    .nav-left {
+        font-weight: bold;
+        text-align: center;
+        margin-top: 20px;
+        margin-left: 50px;
+    }
+
+    /* Styles for filter links on medium-sized screens */
+    .filter-links {
+        margin-top: 20px;
+        text-align: center;
+        margin-right: 50px;
+    }
+}

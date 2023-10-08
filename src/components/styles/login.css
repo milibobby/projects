@@ -1,0 +1,200 @@
+/* Define styles for the login container */
+.login-container {
+    display: flex;
+}
+
+/* Styles for the left section of the login container */
+.left-section {
+    margin-top: 115px;
+    margin-left: 240px;
+}
+
+/* Styles for the "Create Account" section */
+.create-account {
+    margin-top: 10px;
+}
+
+/* Styles for the "Sign Up" link */
+.sign-up-link {
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Styles for form inputs */
+.form input {
+    margin-top: 15px;
+    width: 100%;
+    height: 33px;
+    border-color: black;
+    padding-left: 10px;
+}
+
+/* Styles for the "Keep Me Signed In" section */
+.keep-me-signed {
+    margin-top: 2%;
+    display: flex;
+    align-items: center;
+}
+
+/* Styles for the checkbox input */
+.keep-me-signed input {
+    margin-left: -85px;
+    border-color: black;
+}
+
+/* Hover styles for the checkbox input */
+.keep-me-signed input:hover {
+    border-color: black;
+}
+
+/* Styles for the label associated with the checkbox */
+.keep-me-signed label {
+    white-space: nowrap;
+    position: relative;
+    left: -70px;
+    margin-top: 5px;
+    font-weight: bold;
+    color: #3c3d3d;
+}
+
+/* Styles for the "Sign In" button */
+.sign-in-button {
+    margin-top: 15px;
+    width: 106%;
+    margin-left: -3px;
+    height: 36px;
+    background-color: #3c3d3d;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+/* Hover styles for the "Sign In" button */
+.sign-in-button:hover {
+    background-color: black;
+}
+
+/* Styles for the right section of the login container */
+.right-section {
+    margin-top: 50px;
+    margin-left: 300px;
+}
+
+/* Styles for horizontal line dividers */
+.horizontal-line {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+/* Styles for horizontal line elements */
+.line-1,
+.line-2 {
+    width: 35px;
+    border: none;
+    height: 1px;
+    margin-top: 10px;
+    background-color: black;
+}
+
+/* Styles for sign-in options text */
+.sign-in-options {
+    margin-top: 30px;
+    font-weight: bold;
+    color: #555;
+    margin-left: 6px;
+}
+
+/* Styles for the container of social media icons */
+.social-media-icons-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Styles for the icons wrapper */
+.icons-wrapper {
+    margin-left: 30px;
+}
+
+/* Media query for screens with a maximum width of 768px */
+@media (max-width: 768px) {
+
+    /* Adjust login container styles for smaller screens */
+    .login-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Adjust left section styles for smaller screens */
+    .left-section {
+        margin-top: 20px;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    /* Hide the image in the right section for smaller screens */
+    .right-section img {
+        display: none;
+    }
+
+    /* Adjust right section styles for smaller screens */
+    .right-section {
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Adjust horizontal line styles for smaller screens */
+    .horizontal-line {
+        margin: 10px 0;
+    }
+
+    /* Adjust sign-in options styles for smaller screens */
+    .sign-in-options {
+        margin-top: 20px;
+    }
+
+    /* Center-align the icons wrapper for smaller screens */
+    .icons-wrapper {
+        text-align: center;
+    }
+}
+
+/* Media query for screens with a minimum width of 769px and a maximum width of 1023px */
+@media (min-width: 769px) and (max-width: 1023px) {
+
+    /* Adjust login container styles for medium-sized screens */
+    .login-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Adjust left section styles for medium-sized screens */
+    .left-section {
+        margin-top: 20px;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    /* Adjust right section styles for medium-sized screens */
+    .right-section {
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Adjust horizontal line styles for medium-sized screens */
+    .horizontal-line {
+        margin: 10px 0;
+    }
+
+    /* Adjust sign-in options styles for medium-sized screens */
+    .sign-in-options {
+        margin-top: 20px;
+    }
+
+    /* Center-align the icons wrapper for medium-sized screens */
+    .icons-wrapper {
+        text-align: center;
+    }
+}
